@@ -1,0 +1,329 @@
+/* --- CONFIGURAÇÕES GERAIS --- */
+html {
+    scroll-behavior: smooth; /* Rolagem suave ao clicar em links */
+}
+
+body {
+    background-color: #121212; /* Fundo um pouco mais escuro e elegante */
+    color: #f5f5f5;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal indesejada */
+}
+
+/* --- SCROLLBAR PERSONALIZADA (O Toque Especial) --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00e0ff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00b8cc;
+}
+
+/* --- ANIMAÇÃO DE ENTRADA (Fade In) --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- CONTEÚDO PRINCIPAL --- */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Organiza seções uma embaixo da outra */
+    align-items: center;
+    padding: 60px 5%;
+    animation: fadeInUp 1s ease-out; /* Aplica a animação aqui */
+}
+
+.maincontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 80px; /* Espaço antes dos projetos */
+}
+
+/* --- TEXTO SOBRE MIM --- */
+.text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Efeito Gradiente no Nome ou Destaques */
+.text strong {
+    color: #00e0ff;
+    font-weight: 700;
+}
+
+.text p {
+    font-size: 1.15rem;
+    color: #ccc; /* Cinza claro para melhor leitura */
+    text-align: justify; /* Alinhamento mais bonito */
+}
+
+/* --- CARDS DE TECNOLOGIA (Minhas Ferramentas) --- */
+.techs {
+    margin-top: 40px;
+}
+
+.techs h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cardscontainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 12px; /* Cantos mais arredondados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+    border-color: #00e0ff;
+    transform: translateY(-8px); /* Sobe mais */
+    box-shadow: 0 8px 15px rgba(0, 224, 255, 0.15); /* Brilho neon suave */
+}
+
+/* --- FOTO DE PERFIL --- */
+figure {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+}
+
+figure img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00e0ff;
+    /* Sombra dupla para efeito neon realista */
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.4), 
+                inset 0 0 10px rgba(0, 224, 255, 0.2); 
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+figure img:hover {
+    transform: scale(1.02); /* Leve zoom na foto */
+    box-shadow: 0 0 25px rgba(0, 224, 255, 0.6);
+}
+
+figcaption {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* --- SEÇÃO DE PROJETOS (Estilo Melhorado) --- */
+.projects {
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeInUp 1.5s ease-out; /* Aparece um pouco depois */
+}
+
+.projects h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Linha decorativa ao lado do título */
+.projects h2::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 30px;
+    background-color: #00e0ff;
+    border-radius: 2px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 16px;
+    transition: 0.4s;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Detalhe sutil de gradiente no topo do card */
+.project-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #00e0ff, #005f6b);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    background-color: #252525; /* Fica levemente mais claro */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.card-header i {
+    font-size: 1.8rem;
+    color: #00e0ff;
+}
+
+.card-header h3 {
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    font-weight: 600;
+}
+
+.project-card p {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Tags de tecnologia */
+.tech-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-tags span {
+    background-color: rgba(0, 224, 255, 0.1); /* Fundo transparente azulado */
+    color: #00e0ff;
+    padding: 6px 12px;
+    border-radius: 20px; /* Estilo pílula */
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid rgba(0, 224, 255, 0.2);
+}
+
+/* Botão Ver Código */
+.btn-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 2px solid #00e0ff;
+    color: #00e0ff;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-project:hover {
+    background-color: #00e0ff;
+    color: #121212;
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.4);
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #222;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+    .maincontent {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .text {
+        min-width: 100%;
+    }
+
+    .cardscontainer {
+        justify-content: center;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Um card por linha no celular */
+    }
+}
