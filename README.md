@@ -24,6 +24,5 @@ Para garantir performance e acessibilidade sem dependência de frameworks extern
 
 ```text
 ├── assets/         # Imagens, ícones e arquivos estáticos
-├── css/            # Folhas de estilo (Modularizadas)
-├── js/             # Scripts de interatividade
+├── css/            # Folhas de estilo (Modularizadas)            
 └── index.html      # Página principal
