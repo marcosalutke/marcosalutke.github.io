@@ -10,15 +10,15 @@ Este repositório contém o código-fonte do meu portfólio profissional, desenv
 
 Para garantir performance e acessibilidade sem dependência de frameworks externos, utilizei:
 
-* [cite_start]**HTML5:** Estruturação semântica voltada para SEO e acessibilidade[cite: 27].
-* [cite_start]**CSS3:** Estilização responsiva (Mobile First) com foco em Clean UI[cite: 27].
-* [cite_start]**JavaScript (Vanilla):** Lógica de interatividade e otimização de performance front-end[cite: 27].
+* **HTML5:** Estruturação semântica voltada para SEO e acessibilidade.
+* **CSS3:** Estilização responsiva (Mobile First) com foco em Clean UI.
+* **JavaScript (Vanilla):** Lógica de interatividade e otimização de performance front-end.
 
 ## 🎯 Objetivos do Projeto
 
-1. [cite_start]**Exposição Técnica:** Demonstrar projetos reais desenvolvidos em Python e NestJS[cite: 27, 28].
-2. [cite_start]**Centralização Profissional:** Facilitar o acesso ao meu currículo atualizado e redes sociais (LinkedIn/GitHub)[cite: 2, 28].
-3. [cite_start]**Performance:** Manter um carregamento rápido e otimizado através de código limpo e sem bibliotecas pesadas[cite: 27].
+1. **Exposição Técnica:** Demonstrar projetos reais desenvolvidos em Python, HTML/CSS, JavaScript, PHP.
+2. **Centralização Profissional:** Facilitar o acesso ao meu currículo atualizado e redes sociais (LinkedIn/GitHub).
+3. **Performance:** Manter um carregamento rápido e otimizado através de código limpo e sem bibliotecas pesadas.
 
 ## 📁 Estrutura do Repositório
 
