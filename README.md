@@ -14,7 +14,9 @@ Para garantir performance e acessibilidade sem dependência de frameworks extern
 * **HTML5:** Estruturação semântica voltada para SEO e acessibilidade.
 * **CSS3:** Estilização responsiva (Mobile First) com foco em Clean UI.
 * **JavaScript (Vanilla):** Lógica de interatividade e otimização de performance.
-* **Asset Management:** Otimização de armazenamento com imagens linkadas via CDN/externamente, reduzindo o overhead do repositório.
+* **Asset Management:** Otimização de armazenamento com imagens linkadas via CDN/externamente, reduzindo o overhead do repositório. 
+* **Design Responsivo:** O site foi projetado com uma abordagem Mobile-First, garantindo uma experiência de navegação fluida e adaptável em desktops, tablets e smartphones. O layout se ajusta automaticamente a diferentes resoluções para manter a legibilidade e o profissionalismo em qualquer dispositivo.
+
 
 ## 🎯 Objetivos do Projeto
 
