@@ -1,33 +1,32 @@
-# 🌐 Portfólio Pessoal - Marcos Lutke
+# 🌐 Portfólio Profissional | Marcos Lutke
 
-Este repositório contém o código-fonte do meu portfólio profissional, desenvolvido para consolidar minha trajetória como **Desenvolvedor Backend** e minha vivência em **Infraestrutura de TI**.
+Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi construído do zero para atuar como minha vitrine digital, consolidando minha trajetória de **Infraestrutura e Operações de TI** para **Desenvolvimento Backend**.
 
-🚀 **Acesse o site vivo aqui:** [marcosalutke.github.io](https://marcosalutke.github.io)
+🚀 **Acesse o site ao vivo:** [marcosalutke.github.io](https://marcosalutke.github.io)
 
 ---
 
+## 🎯 Objetivo Arquitetural
 
-## 🛠️ Tecnologias e Arquitetura
+Como um desenvolvedor focado em Backend e DevOps, o objetivo deste frontend foi construir uma página de alta performance, leve e sem dependência de frameworks ou bibliotecas pesadas (como React ou Bootstrap). A arquitetura prioriza o carregamento rápido, SEO e a manutenibilidade do código puro.
 
-Para garantir performance e acessibilidade sem dependência de frameworks externos, utilizei:
+## 🛠️ Tecnologias e Decisões Técnicas
 
-* **HTML5:** Estruturação semântica voltada para SEO e acessibilidade.
-* **CSS3:** Estilização responsiva (Mobile First) com foco em Clean UI.
-* **JavaScript (Vanilla):** Lógica de interatividade e otimização de performance.
-* **Asset Management:** Otimização de armazenamento com imagens linkadas via CDN/externamente, reduzindo o overhead do repositório. 
-* **Design Responsivo:** O site foi projetado com uma abordagem Mobile-First, garantindo uma experiência de navegação fluida e adaptável em desktops, tablets e smartphones. O layout se ajusta automaticamente a diferentes resoluções para manter a legibilidade e o profissionalismo em qualquer dispositivo.
+* **HTML5 Semântico:** Uso rigoroso de tags semânticas (`<main>`, `<article>`, `<aside>`, `<figure>`) para garantir total acessibilidade e melhor indexação por motores de busca.
+* **CSS3 Moderno (Vanilla):**
+  * **Layout:** Construído inteiramente com `Flexbox` e `CSS Grid` para alinhamento preciso.
+  * **Animações e UI:** Implementação de transições suaves (`@keyframes fadeInUp`), scrollbar customizada e efeitos de *glassmorphism/neon* nos cards para uma interface moderna (Dark Mode nativo).
+  * **Modularização:** Separação lógica de estilos (`reset.css`, `header.css`, `style.css`) para facilitar a manutenção.
+* **📱 Design Responsivo (Mobile-First):** O layout se adapta dinamicamente a qualquer tamanho de tela (smartphones, tablets e desktops) utilizando Media Queries estratégicas, garantindo fluidez sem quebra de elementos.
+* **🌐 Asset Management Inteligente:** Para manter o repositório extremamente leve, **nenhuma imagem ou ícone é hospedado localmente**. Todos os assets (Devicon, FontAwesome e fotos de perfil) são consumidos via links externos e CDNs, otimizando o tempo de requisição e o cache do navegador.
 
-
-## 🎯 Objetivos do Projeto
-
-1. **Exposição Técnica:** Demonstrar projetos reais desenvolvidos em Python, HTML/CSS, JavaScript, PHP.
-2. **Centralização Profissional:** Facilitar o acesso ao meu currículo atualizado e redes sociais (LinkedIn/GitHub).
-3. **Performance:** Manter um carregamento rápido e otimizado através de código limpo e sem bibliotecas pesadas.
-
-
-## 📁 Estrutura do Repositório
+## 📁 Estrutura de Diretórios
 
 ```text
-├── assets/         # Imagens, ícones e arquivos estáticos
-├── css/            # Folhas de estilo (Modularizadas)            
-└── index.html      # Página principal
+📦 marcosalutke.github.io
+ ┣ 📂 css
+ ┃ ┣ 📜 header.css      # Estilos exclusivos da barra de navegação
+ ┃ ┣ 📜 reset.css       # Normalização de estilos entre navegadores
+ ┃ ┗ 📜 style.css       # Estilos globais, tipografia, seções e animações
+ ┣ 📜 index.html        # Estrutura principal e roteamento de âncoras
+ ┗ 📜 README.md         # Documentação técnica
